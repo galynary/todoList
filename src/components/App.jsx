@@ -22,7 +22,7 @@ class App extends Component {
       <div className="container-todo">
         {/* Pass the showModal function to Header */}
         <Header showModal={this.showModal} />
-        {/* <Counter />*/}
+        {/*<Counter />*/}
         {this.state.isShowModal && (
           <Modal closeModal={this.closeModal}>
             <ToDoList />
