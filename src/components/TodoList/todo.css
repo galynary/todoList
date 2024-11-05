@@ -21,9 +21,6 @@
   background: transparent;
   font-weight: 700;
   font-size: 18px;
-  color: #d6d9d8;
+
   border: none;
-}
-.btn-close:hover {
-  color: #797a7a;
 }

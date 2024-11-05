@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ToDo = ({ todo, handleCheckCompleted, handleDelete }) => {
+const ToDo = ({ todo, handleCheckCompleted, handleDeleteToDo }) => {
   return (
     <li className="todo-item">
       <div className="todo-item-container">
@@ -14,14 +14,14 @@ const ToDo = ({ todo, handleCheckCompleted, handleDelete }) => {
       </div>
 
       <button
-        onClick={() => handleDelete(todo.id)}
+        disabled={!todo.completed}
+        onClick={() => handleDeleteToDo(todo.id)} // This should match the prop name
         type="button"
         className="btn-close"
         aria-label="Close"
-      >
-        X
-      </button>
+      ></button>
     </li>
   );
 };
+
 export default ToDo;
