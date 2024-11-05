@@ -36,8 +36,7 @@ h5 {
 }
 .button {
   padding: 20px;
-  border-radius: 50%;
 }
-.button-plus {
+.btn-outline {
   margin-right: 20px;
 }

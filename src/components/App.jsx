@@ -32,9 +32,8 @@ class App extends Component {
       <div className="container-todo">
         {/* Pass the showModal function to Header */}
         <Header showModal={this.showModal} />
-        {/*<Counter />*/}
-
-        <ToDoList />
+        {/* <Counter />*/}
+        *<ToDoList />
         {this.state.isShowModal && (
           <Modal closeModal={this.closeModal}>
             <FormLogin createUser={this.createUser} />
